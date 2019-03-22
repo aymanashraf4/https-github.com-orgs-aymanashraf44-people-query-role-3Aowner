@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "apple": {
+    "bankmasr": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/apple",
+            "outputPath": "dist/bankmasr",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "apple:build"
+            "browserTarget": "bankmasr:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "apple:build:production"
+              "browserTarget": "bankmasr:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "apple:build"
+            "browserTarget": "bankmasr:build"
           }
         },
         "test": {
@@ -103,7 +103,7 @@
         }
       }
     },
-    "apple-e2e": {
+    "bankmasr-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +112,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "apple:serve"
+            "devServerTarget": "bankmasr:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "apple:serve:production"
+              "devServerTarget": "bankmasr:serve:production"
             }
           }
         },
@@ -132,5 +132,5 @@
       }
     }
   },
-  "defaultProject": "apple"
+  "defaultProject": "bankmasr"
 }
