@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Title</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="Home.css">
+<style>
+@media(max-width:1024px)
+{
+#j {border: double 5px rebeccapurple;width: 400px; position: relative; right: 256px;}
+}
+@media(max-width:768px)
+{
+#j {border: double 5px rebeccapurple;  width: 400px;  position: relative;   right: 145px;}
+}
+@media(max-width:425px)
+{
+#j{    border: double 5px rebeccapurple;  width: 400px;position: relative; right: -1px;}
+}
+</style>
+</head>
+<body>
+
+<div class="container text-center" ng-app="">
+<br>
+<h1>المنتجات</h1>
+<form id="j">
+<div class="container" ng-app="">
+<div class="col-sm">
+<br>
+<input type="date" ng-model="date" name="date">
+<h2 id="e">التاريخ:{{date|date:'dd-MM-yyyy'}}</h2>
+</div>
+<br>
+<div class="col-sm">
+<input type="time" ng-model="time" name="time">
+<h2 id="e">التوقيت:{{time|date:'hh-mm a'}}</h2>
+</div>
+<br>
+<div class="col-sm">
+<input type="text" name="name" ng-model="name" placeholder="الاسم  ">
+<h2 id="e">الاسم:{{name}}</h2>
+</div>
+<br>
+<div class="col-sm">
+<input type="text" name="NationalID" ng-model="id" placeholder="الرقم القومي  ">
+<h2 id="e">رقم البطاقة:{{id}}</h2>
+</div>
+<br>
+<div class="col-sm">
+<input type="text" name="phone" ng-model="phone" placeholder="رقم الهاتف  ">
+<h2 id="e">رقم الهاتف:{{phone}}</h2>
+</div>
+<br>
+<h3>اختر المنتج و الكمية:</h3>
+<div ng-init=" qua=0 ; price=0 " >
+<select ng-model="price" name="السعر" >
+<option value="1500">ليبيهر </option>
+<option value="1000"> لورين</option>
+<option value="105">ونش فولفو </option>
+<option value="205">حفار فولفو </option>
+<option value="500">  صاروخ الماني</option>
+<option value="325">   كومباس</option>
+<option value="1200">   لودر كوري</option>
+</select>
+&nbsp;&nbsp;&nbsp;
+<input ng-model="qua" name="الكمية">
+<h1 id="t"> السعر:{{price}}</h1>
+<h1 id="t">الكمية:{{price*qua}}</h1>
+</div>
+</div>
+<input type="submit" class="btn btn-success" value="ارسال">
+</form>
+</div>
+
+
+
+
+<script src="D:\asp.net\angular study\angjs\angular-1.7.7/angular.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
