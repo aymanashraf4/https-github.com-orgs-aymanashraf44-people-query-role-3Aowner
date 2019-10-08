@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Supply</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="D:\dash_file\css_files\bootstrap-responsive.min.css">
+<link rel="stylesheet" href="D:\dash_file\css_files\uniform.css">
+<link rel="stylesheet" href="D:\dash_file\css_files\select2.css">
+<link rel="stylesheet" href="D:\dash_file\css_files\matrix-style.css">
+<link rel="stylesheet" href="D:\dash_file\css_files\matrix-media.css">
+<link rel="stylesheet" href="D:\dash_file\css_files\font-awesome.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="D:\7-10-2019\dash_file\css_files\dash.css">
+</head>
+<body>
+
+<!--Header-part-->
+<div id="header">
+  <h1><a href="dashboard.html">Matrix Admin</a></h1>
+</div>
+<!--close-Header-part--> 
+
+<!--top-Header-menu-->
+<div id="user-nav" class="navbar navbar-inverse">
+  <ul class="nav">
+    <li class=""><a title="" href="D:\7-10-2019\dash_file\html_files\inventory\dash.html">Home</span></a></li>
+    <li  class="dropdown" id="profile" ><a title="" href="#" data-toggle="dropdown" data-target="#profile" class="dropdown-toggle"> <span class="text">Inventory</span><b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li><a href="Inventory_Balance.html"> Inventory Balance</a></li>
+        <li class="divider"></li>
+        <li><a href="suppliers.html"> Suppliers </a></li>
+        <li class="divider"></li>
+        <li><a href="Purchase_orders.html"> Purchase orders</a></li>
+        <li class="divider"></li>
+        <li><a href="payments.html"> Payments</a></li>
+      </ul>
+    </li>
+    <li  class="dropdown" id="profile-b" ><a title="" href="#" data-toggle="dropdown" data-target="#profile-b" class="dropdown-toggle"> <span class="text">Reports</span><b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="D:\7-10-2019\dash_file\html_files\reports\day.html"> Report sales Per Day</a></li>
+          <li class="divider"></li>
+          <li><a href="D:\7-10-2019\dash_file\html_files\reports\item.html"> Report sales Per Item </a></li>
+          <li class="divider"></li>
+          <li><a href="D:\7-10-2019\dash_file\html_files\reports\cashier.html"> Report sales Per cashier</a></li>
+          <li class="divider"></li>
+          <li><a href="D:\7-10-2019\dash_file\html_files\reports\date.html">Report Purchases Per Date</a></li>
+          <li class="divider"></li>
+          <li><a class="white" href="D:\7-10-2019\dash_file\html_files\reports\supply.html">Report Purchases Per Suppliers</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Report Purchases Per Items</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Payments Report</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Report Cashier Attendance</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Due Report</a></li>
+  
+        </ul>
+      </li>
+    <li class=""><a title="" href="login.html"> <span class="text">Logout</span></a></li>
+  </ul>
+</div>
+
+<!--start-top-serch-->
+
+<!--close-top-serch--> 
+
+<!--sidebar-menu-->
+
+<div id="sidebar"> <a href="#" class="visible-phone"><i class="icon icon-th"></i>Tables</a>
+  <ul>
+    <li><a href="index.html"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
+    <li><a href="charts.html"><i class="icon icon-signal"></i> <span>Charts &amp; graphs</span></a> </li>
+    <li><a href="widgets.html"><i class="icon icon-inbox"></i> <span>Widgets</span></a> </li>
+    <li class="active"><a href="tables.html"><i class="icon icon-th"></i> <span>Tables</span></a></li>
+    <li><a href="grid.html"><i class="icon icon-fullscreen"></i> <span>Full width</span></a></li>
+    <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Forms</span> <span class="label label-important">3</span></a>
+      <ul>
+        <li><a href="form-common.html">Basic Form</a></li>
+        <li><a href="form-validation.html">Form with Validation</a></li>
+        <li><a href="form-wizard.html">Form with Wizard</a></li>
+      </ul>
+    </li>
+    <li><a href="buttons.html"><i class="icon icon-tint"></i> <span>Buttons &amp; icons</span></a></li>
+    <li><a href="interface.html"><i class="icon icon-pencil"></i> <span>Eelements</span></a></li>
+    <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>Addons</span> <span class="label label-important">5</span></a>
+      <ul>
+        <li><a href="index2.html">Dashboard2</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="chat.html">Chat option</a></li>
+      </ul>
+    </li>
+    <li class="submenu"> <a href="#"><i class="icon icon-info-sign"></i> <span>Error</span> <span class="label label-important">4</span></a>
+      <ul>
+        <li><a href="error403.html">Error 403</a></li>
+        <li><a href="error404.html">Error 404</a></li>
+        <li><a href="error405.html">Error 405</a></li>
+        <li><a href="error500.html">Error 500</a></li>
+      </ul>
+    </li>
+    <li class="content"> <span>Monthly Bandwidth Transfer</span>
+      <div class="progress progress-mini progress-danger active progress-striped">
+        <div style="width: 77%;" class="bar"></div>
+      </div>
+      <span class="percent">77%</span>
+      <div class="stat">21419.94 / 14000 MB</div>
+    </li>
+    <li class="content"> <span>Disk Space Usage</span>
+      <div class="progress progress-mini active progress-striped">
+        <div style="width: 87%;" class="bar"></div>
+      </div>
+      <span class="percent">87%</span>
+      <div class="stat">604.44 / 4000 MB</div>
+    </li>
+  </ul>
+</div>
+<div id="content">
+  <div id="content-header">
+  <br>
+    <h1>Report sales Per Suppliers</h1>
+    <div class="container">
+        <div id="four-element"  class="row">
+
+            <div class="col-sm">
+        <label class="sons">Supplier Name</label>
+        <br>
+      <select id="choice">
+          <option> طارق خليل</option>
+          <option>طارق خليل</option>
+          <option>طارق خليل</option>
+          <option>طارق خليل</option>
+      </select>
+            </div>
+            <div class="col-sm">
+                <label class="sons">From</label>
+                <input id="date" type="date" class="form-control"></input>
+            </div>
+
+            <div class="col-sm">
+                    <label class="sons">To</label>
+                    <input id="date" type="date" class="form-control"></input>
+                </div>
+            <div class="col-sm">
+                    <label class="sons">View</label>
+                    <br>
+                   <button id="blue" class="btn btn">View <i class="far fa-thumbs-up"></i></button>
+                </div>
+        </div>
+    </div>
+    <div id="buttons-x">
+      
+          <span id="excel"> <button id="dark-a" class="btn btn">Excel</button> </span> 
+      
+       
+         <span id="csv">  <button id="dark-b" class="btn btn">CSV</button> </span> 
+     
+     
+         <span id="print"> <button id="dark-c" class="btn btn">Print</button> </span>   
+  
+    </div>
+<div id="search-x">
+ <label id="l">Search:</label> <input id="sea" type="search" class="form-control">
+</div>
+  </div>
+
+  <div id="b-b" class="container-fluid">
+ 
+        <div class="row-fluid">
+          <div class="span12">
+            <div class="widget-box">
+             
+              <div class="widget-content nopadding">
+                <table class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Invoice Number</th>
+                      <th>Supplier Name</th>
+                      <th>Item Name</th>
+                      <th>Quantity</th>
+                      <th>Cost price</th>
+                      <th>Selling Price</th>
+                      <th>Total</th>
+                      <th>Paid Up</th>
+                      <th>amount due</th>
+                      <th>Date</th>
+                    
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="odd gradeX">
+                      <td>1</td>
+                      <td>154865</td>
+                      <td>احمد ماهر</td>
+                      <td>كونجستال</td>
+                      <td class="center">1000</td>
+                      <td class="center">4.75</td>
+                      <td class="center">5.00</td>
+                      <td class="center">4750</td>
+                      <td class="center">3000</td>
+                      <td class="center">1750</td>
+                      <td>2019-07-07</td>
+                   
+                    </tr>
+                    <tr class="even gradeC">
+                            <td>1</td>
+                      <td>154865</td>
+                      <td>احمد ماهر</td>
+                      <td>كونجستال</td>
+                      <td class="center">1000</td>
+                      <td class="center">4.75</td>
+                      <td class="center">5.00</td>
+                      <td class="center">4750</td>
+                      <td class="center">3000</td>
+                      <td class="center">1750</td>
+                      <td>2019-07-07</td>
+                        
+                    </tr>
+                    <tr class="odd gradeA">
+                            <td>1</td>
+                            <td>154865</td>
+                            <td>احمد ماهر</td>
+                            <td>كونجستال</td>
+                            <td class="center">1000</td>
+                            <td class="center">4.75</td>
+                            <td class="center">5.00</td>
+                            <td class="center">4750</td>
+                            <td class="center">3000</td>
+                            <td class="center">1750</td>
+                            <td>2019-07-07</td>
+                           
+                    </tr>
+                    <tr class="even gradeA">
+                            <td>1</td>
+                            <td>154865</td>
+                            <td>احمد ماهر</td>
+                            <td>كونجستال</td>
+                            <td class="center">1000</td>
+                            <td class="center">4.75</td>
+                            <td class="center">5.00</td>
+                            <td class="center">4750</td>
+                            <td class="center">3000</td>
+                            <td class="center">1750</td>
+                            <td>2019-07-07</td>
+                           
+                           
+                            
+                    </tr>
+    
+                    
+    
+                  
+                  </tbody>
+                </table>
+              </div>
+            </div>
+       
+          
+           
+           
+          </div>
+        </div>
+      </div>
+
+</div>
+<!--Footer-part-->
+<div class="row-fluid">
+  <div id="footer" class="span12"> 2013 &copy; Matrix Admin. Brought to you by <a href="http://themedesigner.in">Themedesigner.in</a> </div>
+</div>
+<!--end-Footer-part-->
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.ui.custom.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.uniform.js"></script> 
+<script src="js/select2.min.js"></script> 
+<script src="js/jquery.dataTables.min.js"></script> 
+<script src="js/matrix.js"></script> 
+<script src="js/matrix.tables.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

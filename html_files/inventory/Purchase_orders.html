@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>tab</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="D:\dash_file\css_files\bootstrap-responsive.min.css">
+<link rel="stylesheet" href="D:\dash_file\css_files\uniform.css">
+<link rel="stylesheet" href="D:\dash_file\css_files\select2.css">
+<link rel="stylesheet" href="D:\dash_file\css_files\matrix-style.css">
+<link rel="stylesheet" href="D:\dash_file\css_files\matrix-media.css">
+<link rel="stylesheet" href="D:\dash_file\css_files\font-awesome.css">
+<link rel="stylesheet" href="D:\7-10-2019\dash_file\css_files\dash.css">
+</head>
+<body>
+
+<!--Header-part-->
+<div id="header">
+  <h1><a href="dashboard.html">Matrix Admin</a></h1>
+</div>
+<!--close-Header-part--> 
+
+<!--top-Header-menu-->
+<div id="user-nav" class="navbar navbar-inverse">
+  <ul class="nav">
+    <li class=""><a title="" href="dash.html">Home</span></a></li>
+    <li  class="dropdown" id="profile" ><a title="" href="#" data-toggle="dropdown" data-target="#profile" class="dropdown-toggle"> <span class="text">Inventory</span><b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li><a href="Inventory_Balance.html"> Inventory Balance</a></li>
+        <li class="divider"></li>
+        <li><a href="suppliers.html"> Suppliers </a></li>
+        <li class="divider"></li>
+        <li><a href="Purchase_orders.html"> Purchase orders</a></li>
+        <li class="divider"></li>
+        <li><a href="payments.html"> Payments</a></li>
+      </ul>
+    </li>
+    <li class=""><a title="" href="#">Settings</span></a></li>
+    <li class=""><a title="" href="login.html"> <span class="text">Logout</span></a></li>
+  </ul>
+</div>
+
+<!--start-top-serch-->
+
+<!--close-top-serch--> 
+
+<!--sidebar-menu-->
+
+<div id="sidebar"> <a href="#" class="visible-phone"><i class="icon icon-th"></i>Tables</a>
+  <ul>
+    <li><a href="index.html"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
+    <li><a href="charts.html"><i class="icon icon-signal"></i> <span>Charts &amp; graphs</span></a> </li>
+    <li><a href="widgets.html"><i class="icon icon-inbox"></i> <span>Widgets</span></a> </li>
+    <li class="active"><a href="tables.html"><i class="icon icon-th"></i> <span>Tables</span></a></li>
+    <li><a href="grid.html"><i class="icon icon-fullscreen"></i> <span>Full width</span></a></li>
+    <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Forms</span> <span class="label label-important">3</span></a>
+      <ul>
+        <li><a href="form-common.html">Basic Form</a></li>
+        <li><a href="form-validation.html">Form with Validation</a></li>
+        <li><a href="form-wizard.html">Form with Wizard</a></li>
+      </ul>
+    </li>
+    <li><a href="buttons.html"><i class="icon icon-tint"></i> <span>Buttons &amp; icons</span></a></li>
+    <li><a href="interface.html"><i class="icon icon-pencil"></i> <span>Eelements</span></a></li>
+    <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>Addons</span> <span class="label label-important">5</span></a>
+      <ul>
+        <li><a href="index2.html">Dashboard2</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="chat.html">Chat option</a></li>
+      </ul>
+    </li>
+    <li class="submenu"> <a href="#"><i class="icon icon-info-sign"></i> <span>Error</span> <span class="label label-important">4</span></a>
+      <ul>
+        <li><a href="error403.html">Error 403</a></li>
+        <li><a href="error404.html">Error 404</a></li>
+        <li><a href="error405.html">Error 405</a></li>
+        <li><a href="error500.html">Error 500</a></li>
+      </ul>
+    </li>
+    <li class="content"> <span>Monthly Bandwidth Transfer</span>
+      <div class="progress progress-mini progress-danger active progress-striped">
+        <div style="width: 77%;" class="bar"></div>
+      </div>
+      <span class="percent">77%</span>
+      <div class="stat">21419.94 / 14000 MB</div>
+    </li>
+    <li class="content"> <span>Disk Space Usage</span>
+      <div class="progress progress-mini active progress-striped">
+        <div style="width: 87%;" class="bar"></div>
+      </div>
+      <span class="percent">87%</span>
+      <div class="stat">604.44 / 4000 MB</div>
+    </li>
+  </ul>
+</div>
+<div id="content">
+  <div id="content-header">
+ <br>
+    
+    <h1>Purchase orders</h1>
+
+    <div id="buttons-b">
+      
+        <span id="excel"> <button id="dark-a" class="btn btn">Excel</button> </span> 
+    
+     
+       <span id="csv">  <button id="dark-b" class="btn btn">CSV</button> </span> 
+   
+   
+       <span id="print"> <button id="dark-c" class="btn btn">Print</button> </span>   
+
+  </div>
+<div id="search-b">
+<label id="l">Search:</label> <input id="sea" type="search" class="form-control">
+</div>
+
+<button id="green-b" class="btn btn">New Purchase order</button>
+  </div>
+  <div id="a-a" class="container-fluid">
+  
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="widget-box">
+         
+          <div class="widget-content nopadding">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>medicament name</th>
+                  <th>Product code</th>
+                  <th>Unit</th>
+                  <th>Quantity</th>
+                  <th>Cost Price</th>
+                  <th>Vendor</th>
+                  <th>the Producing company</th>
+                  <th>Distributed company</th>
+                  <th>Total</th>
+                <th>Production Date</th>
+                <th>Expiration date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="odd gradeX">
+                  <td>1</td>
+                  <td>اسم المنتج</td>
+                  <td>c_xzio</td>
+                  <td class="center">كيلو جرام</td>
+                  <td class="center">20</td>
+                  <td>100</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>2000</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr class="even gradeC">
+                  <td>2</td>
+                  <td>اسم المنتج</td>
+                  <td>c_qrup</td>
+                  <td class="center">كيلو جرام</td>
+                  <td class="center">25</td>
+                  <td>110</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>2200</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr class="odd gradeA">
+                  <td>3</td>
+                  <td>اسم المنتج</td>
+                  <td>c_qxln</td>
+                  <td class="center">كيلو جرام</td>
+                  <td class="center">27</td>
+                  <td>200</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>1500</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr class="even gradeA">
+                  <td>4</td>
+                  <td>اسم المنتج</td>
+                  <td>c_agvk</td>
+                  <td class="center">كيلو جرام</td>
+                  <td class="center">30</td>
+                  <td>400</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>3000</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+   
+      
+       
+       
+      </div>
+    </div>
+  </div>
+</div>
+<!--Footer-part-->
+<div class="row-fluid">
+  <div id="footer" class="span12"> 2013 &copy; Matrix Admin. Brought to you by <a href="http://themedesigner.in">Themedesigner.in</a> </div>
+</div>
+<!--end-Footer-part-->
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.ui.custom.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.uniform.js"></script> 
+<script src="js/select2.min.js"></script> 
+<script src="js/jquery.dataTables.min.js"></script> 
+<script src="js/matrix.js"></script> 
+<script src="js/matrix.tables.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
